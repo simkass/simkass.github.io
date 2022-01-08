@@ -32,8 +32,9 @@ export default {
 
 <style scoped>
 .about {
-  height: 800px;
+  height: 560px;
   width: 100%;
+  margin-top: 40px;
   display: inline-flex;
   justify-content: center;
 }

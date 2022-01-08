@@ -48,7 +48,7 @@ export default {
 }
 
 .title{
-    height:35px;
+    height:50px;
     width: 100%;
     text-align: center;
 }
