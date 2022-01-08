@@ -5,7 +5,7 @@
     </div>
     <div class="right">
       <div class="nav">
-        <a>Projects</a>
+        <a>Work</a>
         <a>About</a>
         <a>Contact</a>
       </div>

@@ -21,7 +21,21 @@ export default {
 
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf; /* color of the scroll thumb */
+}
+
 #app {
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
