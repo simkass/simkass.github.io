@@ -113,7 +113,7 @@ export default {
   align-items: center;
 
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 

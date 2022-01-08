@@ -48,6 +48,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .title {
     height: 200px;
+    margin-bottom: 80px;
   }
   .content {
     margin-left: 20px;

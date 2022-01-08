@@ -1,5 +1,6 @@
 <template>
   <div class="work">
+    <div class="title"><h2>Work</h2></div>
     <div class="main-project">
       <thumbnail
         title="COVID-19 Vaccine Availability Notification Service"
@@ -46,6 +47,12 @@ export default {
   flex-wrap: wrap;
 }
 
+.title{
+    height:35px;
+    width: 100%;
+    text-align: center;
+}
+
 .main-project {
   height: 25vw;
   width: 25vw;
@@ -54,16 +61,16 @@ export default {
 }
 
 @media all and (max-width: calc(300px * 3)) {
-    .main-project {
-        height: 50vw;
-        width: 50vw;
-    }
+  .main-project {
+    height: 50vw;
+    width: 50vw;
+  }
 }
 
 @media all and (max-width: calc(350px * 1)) {
-    .main-project {
-        height: 100vw;
-        width: 100vw;
-    }
+  .main-project {
+    height: 100vw;
+    width: 100vw;
+  }
 }
 </style>
