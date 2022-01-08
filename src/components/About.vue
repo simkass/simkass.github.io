@@ -100,14 +100,14 @@ export default {
     width: 95%;
   }
 }
-@media all and (max-width: 950px) {
+@media all and (max-width: 1000px) {
   .container {
     width: 100%;
   }
 }
-@media all and (max-width: 880px) {
+@media all and (max-width: 900px) {
   .about {
-    height: 730px;
+    height: 700px;
   }
   .container {
     height: 680px;

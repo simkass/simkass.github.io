@@ -49,12 +49,13 @@ export default {
 
 .nav {
   margin-right: 30px;
-  color: rgb(143, 143, 143);
   font-size: 18px;
 }
 
 .nav a {
   margin-right: 70px;
+  color: rgb(143, 143, 143);
+  transition: 400ms;
 }
 
 .nav a:hover {

@@ -5,6 +5,7 @@
     <Work />
     <About />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Title from "./Title.vue";
 import Work from "./Work.vue"
 import About from "./About.vue"
 import Contact from "./Contact.vue"
+import Footer from "./Footer.vue"
 
 export default {
   name: "Home",
@@ -22,7 +24,8 @@ export default {
     Title,
     Work,
     About,
-    Contact
+    Contact,
+    Footer
   },
 };
 </script>

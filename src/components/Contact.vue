@@ -33,6 +33,7 @@ export default {
 .contact {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 40px;
   display: inline-flex;
   justify-content: center;
 }
@@ -94,6 +95,10 @@ label {
   }
 }
 @media all and (max-width: 950px) {
+  .contact {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
   .container {
     width: 100%;
   }
