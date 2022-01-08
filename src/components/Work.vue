@@ -1,6 +1,33 @@
 <template>
   <div class="work">
-    <thumbnail title="Hello" desc="WORLD" filename="logo.png" />
+    <div class="main-project">
+      <thumbnail
+        title="COVID-19 Vaccine Availability Notification Service"
+        desc="WEB APPLICATION"
+        filename="vaxx.jpg"
+      />
+    </div>
+    <div class="main-project">
+      <thumbnail
+        title="Author Recognition Algorithm"
+        desc="MARKOV CHAINS"
+        filename="author.jpg"
+      />
+    </div>
+    <div class="main-project">
+      <thumbnail
+        title="Quebec Housing Market Analysis"
+        desc="DATA SCIENCE"
+        filename="house.jpg"
+      />
+    </div>
+    <div class="main-project">
+      <thumbnail
+        title="Introduction to Image Compression"
+        desc="INFORMATION CODING"
+        filename="image.jpeg"
+      />
+    </div>
   </div>
 </template>
 
@@ -14,8 +41,29 @@ export default {
 
 <style scoped>
 .work {
-  height: 600px;
-  width: 100%;
-  background-color: red;
+  width: 100vw;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.main-project {
+  height: 25vw;
+  width: 25vw;
+  max-height: 600px;
+  max-width: 600px;
+}
+
+@media all and (max-width: calc(300px * 3)) {
+    .main-project {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+@media all and (max-width: calc(350px * 1)) {
+    .main-project {
+        height: 100vw;
+        width: 100vw;
+    }
 }
 </style>

@@ -22,6 +22,7 @@ export default {
 * {
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

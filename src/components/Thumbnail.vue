@@ -3,7 +3,9 @@
     <div
       class="static"
       v-bind:class="{ 'thumbnail-offset': overlay, thumbnail: !overlay }"
-      :style="{ backgroundImage: `url(${require('@/assets/' + filename)})` }"
+      :style="{
+        backgroundImage: `url(${require('@/assets/thumbnails/' + filename)})`,
+      }"
     ></div>
     <div
       class="static"
@@ -19,7 +21,6 @@
     >
       <div>
         <a>{{ title }}</a>
-        <p>{{ desc }}</p>
       </div>
     </div>
   </div>
@@ -43,8 +44,8 @@ export default {
 
 <style scoped>
 .container {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 
@@ -54,9 +55,10 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 60%;
   transition: 0.5s;
 }
 
@@ -66,9 +68,10 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% calc(50% + 25px);
+  background-position: 50% calc(60% + 15px);
   transition: 0.5s;
 }
 
@@ -92,39 +95,40 @@ export default {
   left: 0;
 
   background-color: black;
-  opacity: 25%;
+  opacity: 50%;
   transition: 0.5s;
 }
 
 .thumbnail-text {
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   align-items: center;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 
   opacity: 0%;
   transition: 0.5s;
 }
 
 .thumbnail-text div {
-  margin-top: -80px;
+  margin-top: -60px;
   transition: 0.5s;
 }
 
 .thumbnail-text p {
-  font-size: 11px;
+  margin-top: 6px;
+  font-size: 13px;
 }
 
 .thumbnail-text:hover {

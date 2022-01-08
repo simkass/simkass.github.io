@@ -19,8 +19,9 @@ export default {
 
 <style scoped>
 .title {
-  height: 300px;
+  height: 280px;
   width: 100%;
+  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
