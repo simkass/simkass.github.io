@@ -70,7 +70,7 @@ export default {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .left {
     width: 20%;
   }
@@ -84,7 +84,7 @@ export default {
     margin-right: 0px;
   }
   .nav a {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 </style>

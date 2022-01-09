@@ -2,11 +2,12 @@
   <div class="work">
     <div class="title"><h2>Work</h2></div>
     <div class="main-project">
+      <router-link to="/vaccine">
       <thumbnail
         title="COVID-19 Vaccine Availability Notification Service"
         desc="WEB APPLICATION"
         filename="vaxx.jpg"
-      />
+      /></router-link>
     </div>
     <div class="main-project">
       <thumbnail

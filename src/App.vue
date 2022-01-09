@@ -1,22 +1,21 @@
 <template>
   <div id="app">
-    <Header />
-    <Home />
+      <transition
+        name="fade"
+        mode="out-in"
+      >
+        <router-view/>
+      </transition>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Home from "./components/Home.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
-
-    Home,
     Footer,
   },
 };
@@ -48,5 +47,17 @@ body::-webkit-scrollbar-thumb {
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

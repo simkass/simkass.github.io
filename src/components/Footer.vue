@@ -34,7 +34,7 @@ export default {
 }
 
 .branding {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .right-footer {
@@ -46,11 +46,11 @@ export default {
 }
 
 .nav {
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 .nav a {
-  margin-right: 40px;
+  margin-right: 50px;
   color: rgb(143, 143, 143);
   font-size: 18px;
   text-decoration: none;
@@ -62,7 +62,7 @@ export default {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .left-footer {
     width: 40%;
   }
