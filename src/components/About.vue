@@ -17,7 +17,7 @@
           <h2>Cycling & Skiing</h2>
           <h2>Programming & Data Science</h2>
           <h2>Photography & Cinema</h2>
-          <h3>RESUME <font-awesome-icon icon="file-download" /></h3>
+          <a href="./Simon_Kassab_CV.pdf" target="_blank"><h3>RESUME <font-awesome-icon icon="file-download" /></h3></a>
         </div>
       </div>
     </div>
@@ -89,6 +89,16 @@ export default {
 
 .text h2 {
   margin-top: 5px;
+}
+
+.text a {
+  color:rgb(143, 143, 143);
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.text a:hover {
+  color:black
 }
 
 @media all and (max-width: 1500px) {

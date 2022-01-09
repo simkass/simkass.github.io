@@ -5,9 +5,9 @@
     </div>
     <div class="right-footer">
       <div class="nav">
-        <a>LinkedIn</a>
-        <a>GitHub</a>
-        <a>Resume</a>
+        <a href="https://www.linkedin.com/in/simon-kassab/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/simkass" target="_blank">GitHub</a>
+        <a href="./Simon_Kassab_CV.pdf" target="_blank">Resume</a>
       </div>
     </div>
   </div>
@@ -53,6 +53,7 @@ export default {
   margin-right: 40px;
   color: rgb(143, 143, 143);
   font-size: 18px;
+  text-decoration: none;
   transition: 400ms;
 }
 
