@@ -5,9 +5,9 @@
     </div>
     <div class="right">
       <div class="nav">
-        <a>Work</a>
-        <a>About</a>
-        <a>Contact</a>
+        <a  @click="nav('work')">Work</a>
+        <a  @click="nav('about')">About</a>
+        <a  @click="nav('contact')">Contact</a>
       </div>
     </div>
   </div>
@@ -16,6 +16,13 @@
 <script>
 export default {
   name: "Header",
+  methods: {
+    nav(id) {
+      const position = document.getElementById(id).offsetTop;
+      // smooth scroll
+      window.scrollTo({ top: position, behavior: "smooth" });
+    },
+  },
 };
 </script>
 

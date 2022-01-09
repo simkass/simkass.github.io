@@ -34,13 +34,14 @@ export default {
 .about {
   height: 560px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   display: inline-flex;
   justify-content: center;
 }
 
 .container {
-  margin-top: 20px;
+  margin-top: 40px;
   height: 500px;
   width: 60%;
 }

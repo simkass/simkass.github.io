@@ -2,9 +2,9 @@
   <div class="home">
     <Header />
     <Title />
-    <Work />
-    <About />
-    <Contact />
+    <Work id="work"/>
+    <About id="about"/>
+    <Contact id="contact"/>
     <Footer />
   </div>
 </template>

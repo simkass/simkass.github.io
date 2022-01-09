@@ -47,10 +47,11 @@ export default {
   flex-wrap: wrap;
 }
 
-.title{
-    height:50px;
-    width: 100%;
-    text-align: center;
+.title {
+  height: 50px;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .main-project {
