@@ -6,6 +6,13 @@ import Home from "./components/Home.vue";
 import Vaccine from "./components/Vaccine.vue"
 import Author from "./components/Author.vue"
 
+import VueKatex from "vue-katex";
+import 'katex/dist/katex.min.css';
+
+import "prismjs";
+import "prismjs/themes/prism.css";
+import "prismjs/components/prism-python"
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFileDownload, faCaretSquareLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -21,6 +28,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(VueKatex)
 
 const routes = [
   { path: '/', component: Home },

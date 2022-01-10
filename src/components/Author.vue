@@ -1,21 +1,15 @@
 <template>
   <div class="author">
-    <project-page title="Author Recognition Algorithm" locationDate="Quebec, 2022" filename="author.jpg" :content="authorRecognition" />
+    <project-page title="Author Recognition Algorithm" locationDate="Quebec, 2022" filename="author.jpg" />
   </div>
 </template>
 
 <script>
 import ProjectPage from "./ProjectPage.vue";
-import AuthorRecognition from "!raw-loader!../assets/markdown/author/author.md";
 
 export default {
   components: { ProjectPage },
-  name: "Author",
-  data() {
-    return {
-      authorRecognition: AuthorRecognition,
-    };
-  },
+  name: "Author"
 };
 </script>
 

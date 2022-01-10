@@ -27,8 +27,6 @@ export default {
 
 * {
   margin: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -44,6 +42,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #app {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
