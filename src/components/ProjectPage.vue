@@ -22,12 +22,13 @@ export default {
     title: String,
     locationDate: String,
     filename: String,
+    notionId: String
   },
   data: () => ({ blockMap: null }),
   async created() {
     // get Notion blocks from the API via a Notion pageId
     this.blockMap = await getPageBlocks(
-      "Author-Recognition-Algorithm-b4083ae917c741a2ad937c19e459b32e"
+      this.notionId
     );
   },
 };
