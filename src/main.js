@@ -4,10 +4,14 @@ import App from './App.vue'
 import Home from "./components/Home.vue";
 import Vaccine from "./components/Vaccine.vue"
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { faFileDownload, faCaretSquareLeft } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faFileDownload)
+library.add(faCaretSquareLeft)
+library.add(faGithub)
+library.add(faLinkedinIn)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

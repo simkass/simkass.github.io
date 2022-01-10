@@ -5,8 +5,8 @@
     </div>
     <div class="right-footer">
       <div class="nav">
-        <a href="https://www.linkedin.com/in/simon-kassab/" target="_blank">LinkedIn</a>
         <a href="https://github.com/simkass" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/simon-kassab/" target="_blank">LinkedIn</a>
         <a href="./Simon_Kassab_CV.pdf" target="_blank">Resume</a>
       </div>
     </div>

@@ -7,6 +7,11 @@
       <div class="sub-title">
         <a>Computer Engineering New Grad — Based in Montreal</a>
       </div>
+      <div class="icons">
+        <a href="https://github.com/simkass" target="_blank"
+          ><font-awesome-icon :icon="['fab', 'github']" /></a
+        ><a href="https://www.linkedin.com/in/simon-kassab/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +26,8 @@ export default {
 .title {
   height: 280px;
   width: 100%;
-  margin-bottom: 90px;
+  margin-top: 20px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +49,22 @@ export default {
   max-width: 100%;
   color: rgb(143, 143, 143);
   font-size: 20px;
+}
+
+.icons {
+  margin-top: 20px;
+  font-size: 24px;
+  display: inline-flex;
+}
+
+.icons a {
+  margin-right: 30px;
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
