@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+
 import Home from "./components/Home.vue";
 import Vaccine from "./components/Vaccine.vue"
+import Author from "./components/Author.vue"
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFileDownload, faCaretSquareLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -21,7 +24,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/vaccine', component: Vaccine }
+  { path: '/vaccine', component: Vaccine },
+  { path: '/author', component: Author }
 ]
 
 const router = new VueRouter({

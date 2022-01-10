@@ -10,11 +10,12 @@
       /></router-link>
     </div>
     <div class="main-project">
+      <router-link to="/author">
       <thumbnail
         title="Author Recognition Algorithm"
         desc="MARKOV CHAINS"
         filename="author.jpg"
-      />
+      /></router-link>
     </div>
     <div class="main-project">
       <thumbnail

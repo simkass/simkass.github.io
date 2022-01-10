@@ -1,5 +1,5 @@
 <template>
-  <div class="pageheader">
+  <div class="page-header">
     <router-link to="/"
       ><div class="icon"><font-awesome-icon icon="caret-square-left" /></div
     ></router-link>
@@ -13,15 +13,15 @@ export default {
 </script>
 
 <style scoped>
-.pageheader {
-  height: 150px;
+.page-header {
+  height: 50px;
   width: 100%;
+  margin-top: 80px;
   display: inline-flex;
   align-items: center;
 }
 
 .icon {
-  margin-left: 100px;
   font-size: 32px;
   color: black;
   transition: 400ms;
