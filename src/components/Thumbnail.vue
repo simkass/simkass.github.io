@@ -1,12 +1,11 @@
 <template>
-  <div class="container">
-    <div
-      class="static"
-      v-bind:class="{ 'thumbnail-offset': overlay, thumbnail: !overlay }"
-      :style="{
-        backgroundImage: `url(${require('@/assets/thumbnails/' + filename)})`,
-      }"
-    ></div>
+  <div
+    class="container"
+    v-bind:class="{ 'thumbnail-offset': overlay, thumbnail: !overlay }"
+    :style="{
+      backgroundImage: `url(${require('@/assets/thumbnails/' + filename)})`,
+    }"
+  >
     <div
       class="static"
       v-bind:class="{
@@ -21,7 +20,7 @@
     >
       <div>
         <a>{{ title }}</a>
-        <p v-if=subtitle>{{ subtitleText }}</p>
+        <p v-if="subtitle">{{ subtitleText }}</p>
       </div>
     </div>
   </div>
@@ -40,7 +39,7 @@ export default {
     desc: String,
     filename: String,
     subtitle: Boolean,
-    subtitleText: String
+    subtitleText: String,
   },
 };
 </script>
@@ -50,14 +49,6 @@ export default {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-.thumbnail {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,15 +57,31 @@ export default {
 }
 
 .thumbnail-offset {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% calc(60% + 15px);
+  transition: 0.5s;
+}
+
+.thumbnail-text {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% calc(60% + 15px);
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+
+  opacity: 0%;
   transition: 0.5s;
 }
 
@@ -99,28 +106,6 @@ export default {
 
   background-color: black;
   opacity: 50%;
-  transition: 0.5s;
-}
-
-.thumbnail-text {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-
-  opacity: 0%;
   transition: 0.5s;
 }
 
