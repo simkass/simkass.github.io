@@ -18,11 +18,6 @@
 <script>
 export default {
   name: "Thumbnail",
-  data() {
-    return {
-      overlay: false,
-    };
-  },
   props: {
     title: String,
     desc: String,
