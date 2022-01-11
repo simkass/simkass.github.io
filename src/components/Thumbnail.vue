@@ -9,7 +9,6 @@
       <div class="text">
         <div class="text-content">
           <a>{{ title }}</a>
-          <p :v-if="subtitle">{{ subtitleText }}</p>
         </div>
       </div>
     </div>
