@@ -9,7 +9,7 @@
     <div class="title">
       <h1>{{ title }}</h1>
     </div>
-    <div class="location-date">{{ locationDate }}</div>
+    <div class="location-date">{{ locationDate }} <a v-if=github>—</a> <a v-if=github class="code" :href="githubLink" target="_blank">Code <font-awesome-icon :icon="['fab', 'github']" /></a></div>
   </div>
 </template>
 
@@ -20,6 +20,8 @@ export default {
     title: String,
     locationDate: String,
     filename: String,
+    github: Boolean,
+    githubLink: String
   },
 };
 </script>
@@ -41,11 +43,22 @@ export default {
 
 .title {
   margin-top: 10px;
+  margin-bottom: 8px;
   font-size: 22px;
 }
 
 .location-date {
   font-size: 18px;
   color: rgb(143, 143, 143);
+}
+
+.code {
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.code:hover{
+  color: black;
 }
 </style>

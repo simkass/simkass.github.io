@@ -61,6 +61,7 @@ export default {
   margin-right: 30px;
   color: rgb(143, 143, 143);
   text-decoration: none;
+  transition: 400ms;
 }
 
 .icons a:hover {

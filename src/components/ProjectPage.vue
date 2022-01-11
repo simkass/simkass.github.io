@@ -5,6 +5,8 @@
       :title="title"
       :locationDate="locationDate"
       :filename="filename"
+      :github="github"
+      :githubLink="githubLink"
     />
     <NotionRenderer :blockMap="blockMap" katex prism />
   </div>
@@ -22,7 +24,9 @@ export default {
     title: String,
     locationDate: String,
     filename: String,
-    notionId: String
+    notionId: String,
+    github: Boolean,
+    githubLink: String
   },
   data: () => ({ blockMap: null }),
   async created() {

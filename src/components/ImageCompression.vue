@@ -5,6 +5,8 @@
       locationDate="Québec, March 2021"
       filename="image.jpg"
       notionId="Image-Compression-b228751e26c8481188605129720ae9c3"
+      github
+      githubLink="https://github.com/simkass/image-compression"
     />
   </div>
 </template>
