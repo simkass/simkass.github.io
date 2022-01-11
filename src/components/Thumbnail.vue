@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .container {
   height: 100%;
   width: 100%;
