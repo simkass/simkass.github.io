@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container {
   height: 100%;
   width: 100%;
@@ -86,7 +86,7 @@ export default {
   left: 0;
 
   background-color: black;
-  opacity: 0%;
+  opacity: 0;
   transition: 0.5s;
 }
 
@@ -98,7 +98,7 @@ export default {
   left: 0;
 
   background-color: black;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.5s;
 }
 
@@ -120,7 +120,7 @@ export default {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 
-  opacity: 0%;
+  opacity: 0;
   transition: 0.5s;
 }
 
@@ -138,7 +138,7 @@ export default {
 
 .thumbnail-text:hover {
   cursor: pointer;
-  opacity: 100%;
+  opacity: 1;
   transition: 0.05s;
 }
 
