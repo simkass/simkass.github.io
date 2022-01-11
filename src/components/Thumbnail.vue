@@ -131,7 +131,7 @@ export default {
 
 .thumbnail-text p {
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .thumbnail-text:hover {
