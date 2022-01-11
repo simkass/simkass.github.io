@@ -36,7 +36,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/vaccine', component: Vaccine },
   { path: '/author', component: Author },
-  { path: '/image_compression', component: ImageCompression }
+  { path: '/image_compression', component: ImageCompression },
+  { path: '*', redirect: '/' },  
 ]
 
 const router = new VueRouter({

@@ -34,7 +34,7 @@ export default {
 .about {
   height: 560px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
   display: inline-flex;
   justify-content: center;
