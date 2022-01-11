@@ -25,11 +25,12 @@
       />
     </div>
     <div class="main-project">
+      <router-link to="/image_compression">
       <thumbnail
         title="Introduction to Image Compression"
         desc="INFORMATION CODING"
         filename="image.jpeg"
-      />
+      /></router-link>
     </div>
   </div>
 </template>

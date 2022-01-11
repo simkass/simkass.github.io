@@ -3,10 +3,12 @@
     <div
       class="cover"
       :style="{
-        backgroundImage: `url(${require('@/assets/thumbnails/' + filename)})`,
+        backgroundImage: `url(${require('@/assets/covers/' + filename)})`,
       }"
     ></div>
-    <div class="title"><h1>{{ title }}</h1></div>
+    <div class="title">
+      <h1>{{ title }}</h1>
+    </div>
     <div class="location-date">{{ locationDate }}</div>
   </div>
 </template>
@@ -38,8 +40,8 @@ export default {
 }
 
 .title {
-    margin-top: 10px;
-  font-size: 24px;
+  margin-top: 10px;
+  font-size: 22px;
 }
 
 .location-date {

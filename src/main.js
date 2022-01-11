@@ -5,6 +5,7 @@ import App from './App.vue'
 import Home from "./components/Home.vue";
 import Vaccine from "./components/Vaccine.vue"
 import Author from "./components/Author.vue"
+import ImageCompression from "./components/ImageCompression.vue"
 
 import VueKatex from "vue-katex";
 import 'katex/dist/katex.min.css';
@@ -12,6 +13,7 @@ import 'katex/dist/katex.min.css';
 import "prismjs";
 import "prismjs/themes/prism.css";
 import "prismjs/components/prism-python"
+import "prismjs/components/prism-matlab"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFileDownload, faCaretSquareLeft } from '@fortawesome/free-solid-svg-icons'
@@ -33,7 +35,8 @@ Vue.use(VueKatex)
 const routes = [
   { path: '/', component: Home },
   { path: '/vaccine', component: Vaccine },
-  { path: '/author', component: Author }
+  { path: '/author', component: Author },
+  { path: '/image_compression', component: ImageCompression }
 ]
 
 const router = new VueRouter({

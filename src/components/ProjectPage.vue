@@ -41,4 +41,16 @@ export default {
   width: 60%;
   margin: auto;
 }
+
+@media all and (max-width: 1200px) {
+  .project-page {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .project-page {
+    width: 95%;
+  }
+}
 </style>
