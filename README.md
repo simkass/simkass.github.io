@@ -1,5 +1,7 @@
 # simon-kassab
 
+My personal website/portfolio.
+
 ## Project setup
 ```
 npm install
