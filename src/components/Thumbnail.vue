@@ -79,7 +79,6 @@ export default {
   color: white;
   font-size: 24px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
 
   opacity: 0%;
   transition: 0.5s;
@@ -111,6 +110,8 @@ export default {
 
 .thumbnail-text div {
   margin-top: -60px;
+  margin-left: 5px;
+  margin-right: 5px;
   transition: 0.5s;
 }
 
