@@ -2,34 +2,36 @@
   <div class="work">
     <div class="title"><h2>Work</h2></div>
     <div class="main-project">
-      <router-link to="/vaccine">
-      <thumbnail
-        title="COVID-19 Vaccine Availability Notification Service"
-        desc="WEB APPLICATION"
-        filename="vaxx.jpg"
-      /></router-link>
-    </div>
-    <div class="main-project">
-      <router-link to="/author">
-      <thumbnail
-        title="Author Recognition Algorithm"
-        desc="MARKOV CHAINS"
-        filename="author.jpg"
-      /></router-link>
-    </div>
-    <div class="main-project">
       <thumbnail
         title="Quebec Housing Market Analysis"
         desc="DATA SCIENCE"
         filename="house.jpg"
+        subtitle
+        subtitleText="(Coming Soon)"
       />
     </div>
     <div class="main-project">
+      <router-link to="/vaccine">
+        <thumbnail
+          title="COVID-19 Vaccine Availability Notification Service"
+          desc="WEB APPLICATION"
+          filename="vaxx.jpg"
+      /></router-link>
+    </div>
+    <div class="main-project">
+      <router-link to="/author">
+        <thumbnail
+          title="Author Recognition Algorithm"
+          desc="MARKOV CHAINS"
+          filename="author.jpg"
+      /></router-link>
+    </div>
+    <div class="main-project">
       <router-link to="/image_compression">
-      <thumbnail
-        title="Introduction to Image Compression"
-        desc="INFORMATION CODING"
-        filename="image.jpeg"
+        <thumbnail
+          title="Introduction to Image Compression"
+          desc="INFORMATION CODING"
+          filename="image.jpeg"
       /></router-link>
     </div>
   </div>

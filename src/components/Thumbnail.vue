@@ -21,6 +21,7 @@
     >
       <div>
         <a>{{ title }}</a>
+        <p v-if=subtitle>{{ subtitleText }}</p>
       </div>
     </div>
   </div>
@@ -38,6 +39,8 @@ export default {
     title: String,
     desc: String,
     filename: String,
+    subtitle: Boolean,
+    subtitleText: String
   },
 };
 </script>
