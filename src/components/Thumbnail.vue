@@ -1,26 +1,16 @@
 <template>
   <div
-    class="container"
-    v-bind:class="{ 'thumbnail-offset': overlay, thumbnail: !overlay }"
+    class="thumbnail"
     :style="{
       backgroundImage: `url(${require('@/assets/thumbnails/' + filename)})`,
     }"
   >
-    <div
-      class="static"
-      v-bind:class="{
-        'thumbnail-overlay-on': overlay,
-        'thumbnail-overlay-off': !overlay,
-      }"
-    ></div>
-    <div
-      class="thumbnail-text"
-      @mouseover="overlay = true"
-      @mouseleave="overlay = false"
-    >
-      <div>
-        <a>{{ title }}</a>
-        <p v-if="subtitle">{{ subtitleText }}</p>
+    <div class="overlay">
+      <div class="text">
+        <div class="text-content">
+          <a>{{ title }}</a>
+          <p :v-if="subtitle">{{ subtitleText }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -45,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.thumbnail {
   height: 100%;
   width: 100%;
   position: relative;
@@ -53,81 +43,47 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 60%;
-  transition: 0.5s;
+  transition: 400ms;
 }
 
-.thumbnail-offset {
-  background-size: cover;
-  background-repeat: no-repeat;
+.thumbnail:hover {
   background-position: 50% calc(60% + 15px);
-  transition: 0.5s;
 }
 
-.thumbnail-text {
+.overlay {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
+  opacity: 0%;
   color: white;
-  font-size: 24px;
-  font-weight: bold;
-
-  opacity: 0%;
-  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 400ms;
 }
 
-.thumbnail-overlay-off {
-  height: 100%;
+.overlay:hover {
+  opacity: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  height: 80%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background-color: black;
-  opacity: 0%;
-  transition: 0.5s;
+  text-align: center;
+  display: inline-flex;
+  transition: 400ms;
 }
 
-.thumbnail-overlay-on {
+.overlay:hover .text {
   height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background-color: black;
-  opacity: 50%;
-  transition: 0.5s;
 }
 
-.thumbnail-text div {
-  margin-top: -60px;
+.text a {
+  margin: auto;
   margin-left: 5px;
   margin-right: 5px;
-  transition: 0.5s;
+  font-size: 24px;
 }
 
-.thumbnail-text p {
-  margin-top: 6px;
-  font-size: 16px;
-}
-
-.thumbnail-text:hover {
-  cursor: pointer;
-  opacity: 100%;
-  transition: 0.05s;
-}
-
-.thumbnail-text:hover div {
-  margin-top: 0;
-  transition: 0.5s;
+.text-content {
+  margin: auto;
 }
 </style>

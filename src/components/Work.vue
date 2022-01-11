@@ -66,6 +66,10 @@ export default {
   max-width: 600px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media all and (max-width: calc(300px * 3)) {
   .main-project {
     height: 50vw;
