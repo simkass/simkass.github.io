@@ -2,13 +2,15 @@
   <div class="work">
     <div class="title"><h2>Work</h2></div>
     <div class="main-project">
-      <thumbnail
-        title="Quebec Housing Market Analysis"
-        desc="DATA SCIENCE"
-        filename="house.jpg"
-        subtitle
-        subtitleText="(Coming Soon)"
-      />
+      <a href="https://simonkassab.com/quebec-real-estate-app/">      
+        <thumbnail
+          title="Quebec Housing Market Analysis"
+          desc="DATA SCIENCE"
+          filename="house.jpg"
+          subtitle
+          subtitleText="New!"
+        />
+      </a>
     </div>
     <div class="main-project">
       <router-link to="/vaccine">
@@ -62,8 +64,6 @@ export default {
 .main-project {
   height: 25vw;
   width: 25vw;
-  max-height: 600px;
-  max-width: 600px;
 }
 
 a {
