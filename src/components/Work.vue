@@ -8,7 +8,6 @@
           desc="DATA SCIENCE"
           filename="house.jpg"
           subtitle
-          subtitleText="New project!"
         />
       </a>
     </div>

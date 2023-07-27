@@ -5,7 +5,7 @@
         <a>Simon Kassab</a>
       </div>
       <div class="sub-title">
-        <a>Computer Engineering New Grad — Based in Montreal</a>
+        <a>Software Developer — Based in Montreal</a>
       </div>
       <div class="icons">
         <a href="https://github.com/simkass" target="_blank"

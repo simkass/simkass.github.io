@@ -1,4 +1,4 @@
-# simon-kassab
+# simkass.github.io
 
 My personal website/portfolio.
 

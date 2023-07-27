@@ -8,15 +8,15 @@
 
         <div class="text">
           <h4>CURRENT POSITION</h4>
-          <h2>Software Developer — Genetec</h2>
+          <h2>Software Developer II — Genetec</h2>
           <h4>EDUCATION</h4>
           <h2>Computer Engineering — Université de Sherbrooke</h2>
           <h4>LOCATION</h4>
           <h2>Montreal, QC, Canada</h2>
           <h4>HOBBIES & INTERESTS</h4>
-          <h2>Cycling & Skiing</h2>
-          <h2>Programming & Data Science</h2>
-          <h2>Photography & Cinema</h2>
+          <h2>Cycling</h2>
+          <h2>Photography</h2>
+          <h2>Cinema</h2>
           <a href="./Simon_Kassab_CV.pdf" target="_blank"><h3>RESUME <font-awesome-icon icon="file-download" /></h3></a>
         </div>
       </div>

@@ -8,6 +8,7 @@
       :github="github"
       :githubLink="githubLink"
     />
+    <clip-loader v-if="blockMap == null" :color="color" :size="size" />
     <NotionRenderer :blockMap="blockMap" katex prism />
   </div>
 </template>
@@ -16,9 +17,10 @@
 import PageHeader from "./PageHeader.vue";
 import ProjectHeader from "./ProjectHeader.vue";
 import { NotionRenderer, getPageBlocks } from "vue-notion";
+import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
 
 export default {
-  components: { PageHeader, ProjectHeader, NotionRenderer },
+  components: { PageHeader, ProjectHeader, NotionRenderer, ClipLoader },
   name: "ProjectPage",
   props: {
     title: String,
