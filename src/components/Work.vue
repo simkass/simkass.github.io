@@ -1,24 +1,34 @@
 <template>
   <div class="work">
     <div class="title"><h2>Work</h2></div>
+        <div class="main-project">
+      <a href="https://snuggelug.art/">      
+        <thumbnail
+          title="snuggelug.art"
+          desc="WEBSITE"
+          filename="snugge.png"
+          subtitle
+          subtitleText="Website for tattoo artist"
+        />
+      </a>
+    </div>
     <div class="main-project">
       <a href="https://simonkassab.com/quebec-real-estate-app/">      
         <thumbnail
           title="Quebec Housing Market Analysis"
           desc="DATA SCIENCE"
           filename="house.jpg"
-          subtitle
         />
       </a>
     </div>
-    <div class="main-project">
+    <!-- <div class="main-project">
       <router-link to="/vaccine">
         <thumbnail
           title="COVID-19 Vaccine Availability Notification Service"
           desc="WEB APPLICATION"
           filename="vaxx.jpg"
       /></router-link>
-    </div>
+    </div> -->
     <div class="main-project">
       <router-link to="/author">
         <thumbnail
