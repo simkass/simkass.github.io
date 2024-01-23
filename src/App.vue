@@ -6,17 +6,14 @@
       >
         <router-view/>
       </transition>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Footer,
   },
 };
 </script>
@@ -41,11 +38,17 @@ body::-webkit-scrollbar-thumb {
   background-color: #bfbfbf; /* color of the scroll thumb */
 }
 
+@font-face {
+    font-family: "jetbrains-mono";
+    src: url('~@/assets/fonts/JetBrainsMono[wght].ttf');
+}
+
 #app {
   scroll-behavior: smooth;
   overflow-x: hidden;
 
-  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  /* font-family: "Fira Sans", Helvetica, Arial, sans-serif; */
+  font-family: jetbrains-mono;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
