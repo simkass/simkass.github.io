@@ -4,17 +4,17 @@
     <h3>Hi, I'm Simon Kassab</h3>
     <p>I'm a Software Developer</p>
     <h4>Here are some websites I've designed:</h4>
-    <p>&gt; Le Stoud - Booking App</p>
-    <p>&gt; Snuggelug - Artist Portfolio</p>
-    <p>&gt; Reassembling Skeleton - Artist Portfolio</p>
+    <p><a href="https://booking.stoud.io/" target="_blank">   &gt; Le Stoud - Booking App</a></p>
+    <p><a href="https://snuggelug.art/" target="_blank">&gt; Snuggelug - Artist Portfolio</a></p>
+    <p><a href="https://reassemblingskeleton.com/" target="_blank">&gt; Reassembling Skeleton - Artist Portfolio</a></p>
     <h4>Here are other projects I've done:</h4>
-    <p>&gt; Quebec Housing Market Analysis</p>
-    <p>&gt; Author Recognition Algorithm</p>
-    <p>&gt; Introduction to Image Compression</p>
+    <p><a href="https://simonkassab.com/quebec-real-estate-app/">&gt; Quebec Housing Market Analysis</a></p>
+    <p><a href="https://simonkassab.com/#/author">&gt; Author Recognition Algorithm</a></p>
+    <p><a href="https://simonkassab.com/#/image_compression">&gt; Introduction to Image Compression</a></p>
     <h4>If you want to keep in touch:</h4>
-    <p>LinkedIn, Email, GitHub</p>
+    <p><a href="https://www.linkedin.com/in/simon-kassab/" target="_blank">LinkedIn</a>, <a href = "mailto: simkassab@gmail.com">Email</a>, <a href="https://github.com/simkass" target="_blank">GitHub</a></p>
     <h4>For more info:</h4>    
-    <p>Curriculum vitae</p>
+    <p><a href="./Simon_Kassab_CV.pdf" target="_blank">Curriculum vitae</a></p>
 
   </div></div>
 </template>
@@ -46,7 +46,18 @@ export default {
     .home p {
         margin-block: 0.5rem;
     }
-        .home h4 {
+
+    .home a {
+        text-decoration: none;
+        transition: 250ms;
+    }
+
+    .home a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .home h4 {
         margin-top: 1.2rem;
     }
 </style>
