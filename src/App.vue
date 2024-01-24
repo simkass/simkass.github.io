@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-      <transition
-        name="fade"
-        mode="out-in"
-      >
-        <router-view/>
-      </transition>
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
+    <Footer2 />
   </div>
 </template>
 
 <script>
+import Footer2 from "./components/Footer2.vue";
 
 export default {
   name: "App",
   components: {
+    Footer2,
   },
 };
 </script>
@@ -39,8 +39,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @font-face {
-    font-family: "jetbrains-mono";
-    src: url('~@/assets/fonts/JetBrainsMono[wght].ttf');
+  font-family: "jetbrains-mono";
+  src: url("~@/assets/fonts/JetBrainsMono[wght].ttf");
 }
 
 #app {
@@ -62,6 +62,6 @@ body::-webkit-scrollbar-thumb {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>

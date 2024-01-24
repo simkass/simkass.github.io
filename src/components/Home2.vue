@@ -1,8 +1,5 @@
 <template>
   <div class="Home">
-    <!-- <div v-on:click="switchToLightTheme()"><p>[light]</p></div>
-    <div v-on:click="switchToDarkTheme()"><p>[dark]</p></div> -->
-
     <div class="home">
       <h3>Hi, I'm Simon Kassab</h3>
       <p>I'm a Software Developer</p>
@@ -54,28 +51,14 @@
 </template>
 
 <script>
-import { ref } from "vue";
-
-// state
-const theme = ref("light");
-
 export default {
-  name: "Home",
+  name: "Home2",
   components: {},
-  methods: {
-    switchToLightTheme: function () {
-      theme.value = "light";
-    },
-    switchToDarkTheme: function () {
-      theme.value = "dark";
-    },
-  },
 };
 </script>
 
 <style>
 .Home {
-  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
