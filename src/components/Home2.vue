@@ -54,6 +54,11 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
+// state
+const theme = ref("light");
+
 export default {
   name: "Home",
   components: {},
@@ -66,11 +71,6 @@ export default {
     },
   },
 };
-
-import { ref } from "vue";
-
-// state
-const theme = ref("light");
 </script>
 
 <style>
