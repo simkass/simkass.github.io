@@ -2,24 +2,8 @@
   <div class="Home">
     <div class="home">
       <h3>Hi, I'm Simon Kassab</h3>
-      <p>I'm a Software Developer</p>
-      <h4>Here are some websites I've designed:</h4>
-      <p>
-        <a href="https://booking.stoud.io/" target="_blank">
-          &gt; Le Stoud - Booking App</a
-        >
-      </p>
-      <p>
-        <a href="https://snuggelug.art/" target="_blank"
-          >&gt; Snuggelug - Artist Portfolio</a
-        >
-      </p>
-      <p>
-        <a href="https://reassemblingskeleton.com/" target="_blank"
-          >&gt; Reassembling Skeleton - Artist Portfolio</a
-        >
-      </p>
-      <h4>Here are other projects I've done:</h4>
+      <p>I'm a Software Development Team Leader @ Genetec, MTL</p>
+      <h4>My articles:</h4>
       <p>
         <a href="https://simonkassab.com/quebec-real-estate-app/"
           >&gt; Quebec Housing Market Analysis</a
